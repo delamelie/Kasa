@@ -9,9 +9,8 @@
     height: 68px;
   }
 
-  &__navigation ul {
+  &__navigation__links {
     display: flex;
-    list-style-type: none;
 
     a {
       position: relative;

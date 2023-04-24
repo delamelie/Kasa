@@ -1,0 +1,18 @@
+.collapse {
+  width: 50%;
+  margin-left: 100px;
+
+  &__title {
+    padding: 15px;
+    background-color: $color-primary;
+    color: $color-secondary;
+    border-radius: 10px;
+  }
+
+  &__text {
+    padding: 15px;
+    color: $color-primary;
+    background-color: #f6f6f6;
+    border-radius: 10px;
+  }
+}

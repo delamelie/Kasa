@@ -1,12 +1,11 @@
 import { Link } from 'react-router-dom'
 
-function Card({ accomodation }) {
-  console.log(accomodation)
+export default function Thumb({ accomodation }) {
   return (
     <Link to={`/logement/${accomodation.id}`}>
       <li className="accomodation__card">
         <img
-          src={accomodation.pictures[0]}
+          src={accomodation.cover}
           className="accomodation__card__photo"
           alt={accomodation.title}
         />
@@ -15,5 +14,3 @@ function Card({ accomodation }) {
     </Link>
   )
 }
-
-export default Card

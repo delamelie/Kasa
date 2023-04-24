@@ -4,7 +4,7 @@
   background-color: #f7f7f7;
   padding: 56px 50px;
 
-  ul {
+  &__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 340px 340px 340px;
@@ -12,7 +12,6 @@
     column-gap: 57px;
     margin: 0;
     padding: 0;
-    list-style-type: none;
   }
 
   &__card {
@@ -31,7 +30,6 @@
       position: absolute;
       bottom: 10px;
       left: 10px;
-      font-size: 18px;
       color: $color-secondary;
     }
   }

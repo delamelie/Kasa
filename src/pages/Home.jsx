@@ -1,17 +1,12 @@
-import Header from '../components/Header'
+import React from 'react'
 import Banner from '../components/Banner'
-import Accomodation from '../components/Accomodation'
-import Footer from '../components/Footer'
+import AccomodationSection from '../components/AccomodationSection'
 
-function Home() {
+export default function Home() {
   return (
-    <div>
-      <Header />
+    <React.Fragment>
       <Banner />
-      <Accomodation />
-      <Footer />
-    </div>
+      <AccomodationSection />
+    </React.Fragment>
   )
 }
-
-export default Home

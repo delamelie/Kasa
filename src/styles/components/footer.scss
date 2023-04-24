@@ -13,13 +13,13 @@
     height: 40px;
   }
 
+  &__logo path {
+    fill: white;
+  }
+
   &__copyright {
     color: $color-secondary;
     font-size: 24px;
     font-weight: 500;
   }
-}
-
-svg path {
-  fill: white;
 }

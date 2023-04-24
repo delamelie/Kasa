@@ -1,8 +1,7 @@
-import React from 'react'
 import { useState, useEffect } from 'react'
-import Card from './Card'
+import Thumb from './Thumb'
 
-function Accomodation() {
+export default function AccomodationSection() {
   const [data, setData] = useState([])
 
   useEffect(() => {
@@ -14,13 +13,11 @@ function Accomodation() {
 
   return (
     <main className="accomodation">
-      <ul>
+      <ul className="accomodation__list">
         {data.map((accomodation) => (
-          <Card key={accomodation.title} accomodation={accomodation} />
+          <Thumb key={accomodation.id} accomodation={accomodation} />
         ))}
       </ul>
     </main>
   )
 }
-
-export default Accomodation

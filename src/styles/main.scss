@@ -5,6 +5,12 @@ body {
   margin: auto;
   box-sizing: border-box;
   font-family: 'Montserrat', 'DM Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+  list-style-type: none;
 }

@@ -1,0 +1,59 @@
+.accomodation__photo {
+  margin: 20px 100px 0 100px;
+  width: 1240px;
+  height: 415px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.accomodation__heading {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 100px;
+  color: $color-primary;
+
+  &__main {
+    &__title {
+      margin: 0;
+      font-size: 36px;
+      font-weight: 500;
+    }
+
+    &__location {
+      margin: 10px 0 0 0;
+      font-weight: 500;
+    }
+
+    &__tags {
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &__host {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    max-width: 150px;
+
+    &__profile {
+      display: flex;
+      align-items: center;
+
+      &__name {
+        max-width: 100px;
+        text-align: end;
+      }
+
+      &__photo {
+        width: 64px;
+        height: 64px;
+        margin-left: 10px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+  }
+}

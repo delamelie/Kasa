@@ -1,12 +1,9 @@
-import Header from '../components/Header'
+import React from 'react'
 
-function About() {
+export default function About() {
   return (
-    <div>
-      <Header />
+    <React.Fragment>
       <div>About</div>
-    </div>
+    </React.Fragment>
   )
 }
-
-export default About

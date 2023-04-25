@@ -1,0 +1,31 @@
+.collapse {
+  /*margin: 0 100px 20px 100px;*/
+  margin-bottom: 20px;
+
+  &__button {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px;
+    color: $color-secondary;
+    background-color: $color-primary;
+    border-radius: 10px;
+    border: none;
+  }
+
+  &__text {
+    display: none;
+    padding: 25px 15px;
+    color: $color-primary;
+    background-color: #f6f6f6;
+    border-radius: 10px;
+  }
+}
+
+.chevron-up {
+  transform: rotate(180deg);
+}
+
+.show {
+  display: flex;
+}

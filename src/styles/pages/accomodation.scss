@@ -57,3 +57,16 @@
     }
   }
 }
+
+.accomodation__specs {
+  display: flex;
+
+  .collapse {
+    width: 50%;
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

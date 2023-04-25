@@ -2,7 +2,7 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import Tag from '../components/Tag'
-import Collapse from '../components/Collapse'
+import Collapsible from '../components/Collapsible'
 import Rating from '../components/Rating'
 
 export default function Accomodation() {
@@ -57,17 +57,28 @@ export default function Accomodation() {
         </div>
       </section>
       <section className="accomodation__specs">
-        <div className="accomodation__specs__description">
-          <Collapse data={data} />
-        </div>
-        <div className="accomodation__specs__equipments">
-          <ul>
-            {data.equipments &&
-              data.equipments.map((equipment, index) => {
-                return <li key={index}>{equipment}</li>
-              })}
-          </ul>
-        </div>
+        <Collapsible
+          className="accomodation__specs__description"
+          label="Description"
+          children={data.description}
+        />
+
+        <Collapsible
+          label="Équipements"
+          children={
+            data.equipments &&
+            data.equipments.map((equipment, index) => {
+              return (
+                <div
+                  className="accomodation__specs__equipments__items"
+                  key={index}
+                >
+                  {equipment}
+                </div>
+              )
+            })
+          }
+        />
       </section>
     </React.Fragment>
   )

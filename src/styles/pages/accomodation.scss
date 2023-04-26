@@ -1,15 +1,8 @@
-.accomodation__photo {
-  margin: 20px 100px 0 100px;
-  width: 1240px;
-  height: 415px;
-  object-fit: cover;
-  border-radius: 25px;
-}
-
 .accomodation__heading {
   display: flex;
   justify-content: space-between;
-  margin: 30px 100px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   color: $color-primary;
 
   &__main {
@@ -60,9 +53,10 @@
 
 .accomodation__specs {
   display: flex;
+  justify-content: space-between;
 
   .collapse {
-    width: 50%;
+    width: 47%;
 
     &__text {
       display: flex;

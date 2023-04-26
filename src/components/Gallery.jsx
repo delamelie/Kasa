@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import Thumb from './Thumb'
 
-export default function AccomodationSection() {
+export default function Gallery() {
   const [data, setData] = useState([])
 
   useEffect(() => {

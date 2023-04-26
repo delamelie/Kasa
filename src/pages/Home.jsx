@@ -1,16 +1,15 @@
-import React from 'react'
 import Banner from '../components/Banner'
-import AccomodationSection from '../components/AccomodationSection'
+import Gallery from '../components/Gallery'
 import HomepageBanner from '../assets/sea-resized.jpg'
 
 export default function Home() {
   return (
-    <React.Fragment>
+    <div className="container">
       <Banner
         children="Chez vous, partout et ailleurs"
         picture={HomepageBanner}
       />
-      <AccomodationSection />
-    </React.Fragment>
+      <Gallery />
+    </div>
   )
 }

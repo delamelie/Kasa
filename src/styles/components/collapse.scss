@@ -1,5 +1,4 @@
 .collapse {
-  /*margin: 0 100px 20px 100px;*/
   margin-bottom: 20px;
 
   &__button {
@@ -7,6 +6,7 @@
     justify-content: space-between;
     width: 100%;
     padding: 15px;
+    cursor: pointer;
     color: $color-secondary;
     background-color: $color-primary;
     border-radius: 10px;

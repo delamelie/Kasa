@@ -3,7 +3,11 @@ import logo from '../assets/logo.svg'
 
 export default function Header() {
   return (
-    <header className="header">
+    <header
+      className="header"
+      role="navigation"
+      aria-label="Navigation générale"
+    >
       <img src={logo} alt="Logo" className="header__logo" />
       <nav className="header__navigation">
         <ul className="header__navigation__links">

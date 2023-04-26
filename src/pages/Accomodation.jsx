@@ -1,8 +1,8 @@
-import React from 'react'
 import { useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
+import Carousel from '../components/Carousel'
 import Tag from '../components/Tag'
-import Collapsible from '../components/Collapsible'
+import Collapse from '../components/Collapse'
 import Rating from '../components/Rating'
 
 export default function Accomodation() {
@@ -26,20 +26,20 @@ export default function Accomodation() {
   }, [id])
 
   return (
-    <React.Fragment>
-      <img src={data.cover} className="accomodation__photo" alt={data.title} />
+    <div className="container">
+      <Carousel data={data} />
       <section className="accomodation__heading">
         <div className="accomodation__heading__main">
           <h1 className="accomodation__heading__main__title">{data.title}</h1>
           <h2 className="accomodation__heading__main__location">
             {data.location}
           </h2>
-
           <ul className="accomodation__heading__main__tags">
             {data.tags &&
               data.tags.map((tag, index) => <Tag key={index} tag={tag} />)}
           </ul>
         </div>
+
         <div className="accomodation__heading__host">
           <div className="accomodation__heading__host__profile">
             <div className="accomodation__heading__host__profile__name">
@@ -52,18 +52,18 @@ export default function Accomodation() {
             />
           </div>
           <div className="accomodation__heading__host__rating">
-            <Rating data={data} />
+            <Rating rating={data.rating} />
           </div>
         </div>
       </section>
       <section className="accomodation__specs">
-        <Collapsible
+        <Collapse
           className="accomodation__specs__description"
           label="Description"
           children={data.description}
         />
 
-        <Collapsible
+        <Collapse
           label="Équipements"
           children={
             data.equipments &&
@@ -80,6 +80,6 @@ export default function Accomodation() {
           }
         />
       </section>
-    </React.Fragment>
+    </div>
   )
 }

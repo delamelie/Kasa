@@ -2,9 +2,8 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 
-export default function Rating({ data }) {
+export default function Rating({ rating }) {
   const starsArray = [...Array(5).keys()]
-  const rating = data.rating
 
   const stars = starsArray.map((index) => (
     <FontAwesomeIcon

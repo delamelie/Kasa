@@ -1,0 +1,34 @@
+.carousel {
+  &__item {
+    position: relative;
+    width: 1240px;
+    height: 415px;
+    margin-top: 30px;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+  }
+
+  &__button {
+    cursor: pointer;
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    font-size: 84px;
+    color: #ffff;
+    background-color: transparent;
+    border: none;
+  }
+
+  .button__previous {
+    left: 5%;
+  }
+
+  .button__next {
+    right: 5%;
+  }
+}

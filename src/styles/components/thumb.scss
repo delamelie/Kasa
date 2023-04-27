@@ -1,0 +1,24 @@
+.accomodation {
+  &__card {
+    position: relative;
+    width: 340px;
+    height: 340px;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &__photo {
+      @include image-position;
+      border-radius: 10px;
+      filter: brightness(90%);
+    }
+
+    &__name {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      color: $color-secondary;
+    }
+  }
+}

@@ -3,23 +3,20 @@
   height: 223px;
   margin-top: 60px;
   margin-bottom: 40px;
+  filter: brightness(80%);
 
   &__picture {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 25px;
+    @include image-position;
+    @include image-border-radius;
   }
 
   &__tagline {
+    @include center-element;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: $color-secondary;
     font-size: 48px;
     font-weight: 500;

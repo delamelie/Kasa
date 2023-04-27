@@ -1,4 +1,3 @@
-import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 
@@ -12,7 +11,7 @@ export default function Rating({ rating }) {
       className={rating >= index ? 'plain-star' : 'empty-star'}
     />
   ))
-  return <React.Fragment>{stars}</React.Fragment>
+  return <div className="rating">{stars}</div>
 }
 
 // const stars = starsArray.map((index) => {

@@ -5,7 +5,7 @@ import {
   faChevronRight,
 } from '@fortawesome/free-solid-svg-icons'
 
-export default function Carousel({ data }) {
+export default function Carousel({ data, children }) {
   const [index, setIndex] = useState(0)
   const picturesLength = data.pictures && data.pictures.length
 
@@ -22,33 +22,41 @@ export default function Carousel({ data }) {
   return (
     <ul className="carousel" aria-label="carousel">
       <li className="carousel__item">
-        <button
-          type="button"
-          className="carousel__button button__previous"
-          onClick={handlePrevious}
-        >
-          <FontAwesomeIcon
-            icon={faChevronLeft}
-            className="chevron chevron__left"
-          />
-        </button>
-
         <img
           src={data.pictures && data.pictures[index]}
-          className="carousel__image"
+          className="carousel__item__image"
           alt="{data.title}"
         />
 
-        <button
-          type="button"
-          className="carousel__button button__next"
-          onClick={handleNext}
-        >
-          <FontAwesomeIcon
-            icon={faChevronRight}
-            className="chevron chevron__right"
-          />
-        </button>
+        {picturesLength > 1 && (
+          <div>
+            <button
+              type="button"
+              className="carousel__item__button button__previous"
+              onClick={handlePrevious}
+            >
+              <FontAwesomeIcon
+                icon={faChevronLeft}
+                className="chevron chevron__left"
+              />
+            </button>
+
+            <button
+              type="button"
+              className="carousel__item__button button__next"
+              onClick={handleNext}
+            >
+              <FontAwesomeIcon
+                icon={faChevronRight}
+                className="chevron chevron__right"
+              />
+            </button>
+
+            <span className="carousel__item__counter">
+              {index + 1}/{picturesLength}
+            </span>
+          </div>
+        )}
       </li>
     </ul>
   )

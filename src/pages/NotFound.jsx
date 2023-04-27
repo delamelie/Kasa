@@ -1,5 +1,5 @@
-import ErrorMessage from '../components/ErrorMessage'
+import Error from '../components/Error'
 
 export default function NotFound() {
-  return <ErrorMessage />
+  return <Error />
 }

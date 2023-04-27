@@ -8,20 +8,22 @@ import {
 } from 'react-router-dom'
 //import App from './App'
 import './styles/index.scss'
+import Layout from './components/Layout'
 import Home from './pages/Home'
-import Accomodation from './pages/Accomodation'
+import Accomodation, { testLoader } from './pages/Accomodation'
 import About from './pages/About'
 import NotFound from './pages/NotFound'
-import Layout from './components/Layout'
+import { accomodationsLoader } from './components/Gallery'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
-      <Route index element={<Home />} />
+      <Route index element={<Home />} loader={accomodationsLoader} />
       <Route
         path="logement/:id"
         element={<Accomodation />}
-        // errorElement={<NotFound />}
+        // loader={testLoader}
+        errorElement={<NotFound />}
       />
       <Route path="a-propos" element={<About />} />
       <Route path="*" element={<NotFound />} />

@@ -1,35 +1,15 @@
-.accomodation {
+.gallery {
+  @minclude image-border-radius;
   margin-bottom: 100px;
-  border-radius: 25px;
   background-color: #f7f7f7;
   padding: 56px 50px;
 
-  &__list {
+  &__item {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 340px 340px 340px;
     row-gap: 55px;
     column-gap: 57px;
     margin: 0;
-  }
-
-  &__card {
-    position: relative;
-    width: 340px;
-
-    &__photo {
-      width: 340px;
-      height: 340px;
-      object-fit: cover;
-      border-radius: 10px;
-      filter: brightness(90%);
-    }
-
-    &__name {
-      position: absolute;
-      bottom: 10px;
-      left: 10px;
-      color: $color-secondary;
-    }
   }
 }

@@ -4,24 +4,30 @@
     width: 1240px;
     height: 415px;
     margin-top: 30px;
-  }
 
-  &__image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 25px;
-  }
+    &__image {
+      @include image-position;
+      @include image-border-radius;
+    }
 
-  &__button {
-    cursor: pointer;
-    position: absolute;
-    z-index: 100;
-    top: 50%;
-    font-size: 84px;
-    color: #ffff;
-    background-color: transparent;
-    border: none;
+    &__button {
+      position: absolute;
+      z-index: 100;
+      top: 0;
+      bottom: 0;
+      font-size: 84px;
+      color: $color-secondary;
+      background-color: transparent;
+      border: none;
+    }
+
+    &__counter {
+      position: absolute;
+      z-index: 100;
+      left: 50%;
+      bottom: 8%;
+      color: $color-secondary;
+    }
   }
 
   .button__previous {

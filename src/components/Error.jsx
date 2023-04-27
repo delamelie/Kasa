@@ -7,6 +7,7 @@ function ErrorMessage() {
   return (
     <div className="error">
       <h1>404</h1>
+      <p>{error.message}</p>
       <h2>Oups ! La page que vous demandez n'existe pas</h2>
       <Link to="/">
         <div>Retour sur la page d'accueil</div>

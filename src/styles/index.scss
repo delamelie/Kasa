@@ -1,8 +1,10 @@
 @import './main.scss';
 @import './utils/variables.scss';
+@import './utils/mixins.scss';
 @import './components/header.scss';
 @import './components/banner.scss';
 @import './components/gallery.scss';
+@import './components/thumb.scss';
 @import './components/footer.scss';
 @import './components/error.scss';
 @import './pages/accomodation.scss';
@@ -10,3 +12,4 @@
 @import './components/tag.scss';
 @import './components/rating.scss';
 @import './components/carousel.scss';
+@import './pages/about.scss';

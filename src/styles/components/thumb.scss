@@ -1,8 +1,12 @@
 .accomodation {
   &__card {
     position: relative;
-    width: 340px;
-    height: 340px;
+    height: 255px;
+    margin-bottom: 20px;
+    @media (min-width: 768px) {
+      width: 340px;
+      height: 340px;
+    }
 
     &:hover {
       opacity: 0.6;

@@ -1,13 +1,18 @@
 .banner {
   position: relative;
-  height: 223px;
-  margin-top: 60px;
-  margin-bottom: 40px;
-  filter: brightness(80%);
+  height: 111px;
+  margin-bottom: 20px;
+
+  @media (min-width: 768px) {
+    height: 223px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
 
   &__picture {
     @include image-position;
     @include image-border-radius;
+    filter: brightness(80%);
   }
 
   &__tagline {
@@ -18,7 +23,11 @@
     right: 0;
     bottom: 0;
     color: $color-secondary;
-    font-size: 48px;
+    font-size: 24px;
     font-weight: 500;
+
+    @media (min-width: 768px) {
+      font-size: 48px;
+    }
   }
 }

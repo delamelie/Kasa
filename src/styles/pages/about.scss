@@ -1,3 +1,18 @@
 .policy .collapse {
-  font-size: 24px;
+  &__button {
+    height: 30px;
+    font-size: 13px;
+    border-radius: 5px;
+    @media (min-width: 768px) {
+      height: 48px;
+      font-size: 24px;
+    }
+  }
+  &__text {
+    font-size: 12px;
+    border-radius: 5px;
+    @media (min-width: 768px) {
+      font-size: 24px;
+    }
+  }
 }

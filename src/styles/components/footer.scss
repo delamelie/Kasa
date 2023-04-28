@@ -2,13 +2,16 @@
   @include center-element;
   flex-direction: column;
   height: 210px;
-  margin-top: 40px;
   background-color: #000000;
   width: 100%;
+  margin-top: 40px;
 
   &__logo {
     width: 122px;
     height: 40px;
+    @media (min-width: 768px) {
+      margin: 40px 0 30px 0;
+    }
   }
 
   &__logo path {
@@ -16,8 +19,11 @@
   }
 
   &__copyright {
+    font-size: 12px;
     color: $color-secondary;
-    font-size: 24px;
     font-weight: 500;
+    @media (min-width: 768px) {
+      font-size: 24px;
+    }
   }
 }

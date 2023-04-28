@@ -15,9 +15,7 @@ export default function Collapse({ children, label }) {
         aria-expanded="false"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <div className="collapse__button__name" id="collapse">
-          {label}
-        </div>
+        {label}
         <FontAwesomeIcon
           icon={faChevronDown}
           className={isOpen ? 'chevron chevron-up' : 'chevron chevron-down'}
@@ -26,7 +24,7 @@ export default function Collapse({ children, label }) {
       {/* <div className={isOpen ? 'collapse__text show' : 'collapse__text'}>
         {children}
       </div> */}
-      <div>
+      <div id="collapse">
         {isOpen && <div className="collapse__text show">{children}</div>}
       </div>
     </div>

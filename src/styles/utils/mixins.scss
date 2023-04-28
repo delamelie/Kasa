@@ -11,5 +11,8 @@
 }
 
 @mixin image-border-radius {
-  border-radius: 25px;
+  border-radius: 10px;
+  @media (min-width: 768px) {
+    border-radius: 25px;
+  }
 }

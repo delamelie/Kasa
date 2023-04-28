@@ -5,7 +5,7 @@ import {
   faChevronRight,
 } from '@fortawesome/free-solid-svg-icons'
 
-export default function Carousel({ data, children }) {
+export default function Carousel({ data }) {
   const [index, setIndex] = useState(0)
   const picturesLength = data.pictures && data.pictures.length
 
@@ -25,7 +25,7 @@ export default function Carousel({ data, children }) {
         <img
           src={data.pictures && data.pictures[index]}
           className="carousel__item__image"
-          alt="{data.title}"
+          alt={data.title}
         />
 
         {picturesLength > 1 && (

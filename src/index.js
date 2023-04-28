@@ -27,6 +27,7 @@ const router = createBrowserRouter(
       />
       <Route path="a-propos" element={<About />} />
       <Route path="*" element={<NotFound />} />
+      <Route path="404" element={<NotFound />} />
     </Route>
   )
 )

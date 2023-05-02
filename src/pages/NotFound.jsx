@@ -1,5 +1,9 @@
 import Error from '../components/Error'
 
 export default function NotFound() {
-  return <Error />
+  return (
+    <div className="container">
+      <Error />
+    </div>
+  )
 }

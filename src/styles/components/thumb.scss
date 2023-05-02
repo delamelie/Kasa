@@ -3,8 +3,10 @@
     position: relative;
     height: 255px;
     margin-bottom: 20px;
-    @media (min-width: 768px) {
-      width: 340px;
+    /* background: linear-gradient(185deg, transparent 70%, rgba(0, 0, 0, 0.5)); */
+
+    @media (min-width: 1200px) {
+      max-width: 340px;
       height: 340px;
     }
 

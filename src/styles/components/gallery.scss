@@ -1,21 +1,28 @@
 .gallery {
   @minclude image-border-radius;
   margin-bottom: 20px;
-  @media (min-width: 768px) {
-    margin-bottom: 100px;
-    margin: 0 0 100px 0;
+
+  @media (min-width: 992px) {
+    padding: 40px 30px;
     background-color: #f7f7f7;
-    padding: 56px 50px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 52px 50px;
   }
 
   &__item {
     margin: 0;
+
     @media (min-width: 768px) {
       display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 20px;
+    }
+    @media (min-width: 1200px) {
       grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 340px 340px 340px;
       row-gap: 55px;
-      column-gap: 57px;
+      column-gap: 50px;
     }
   }
 }

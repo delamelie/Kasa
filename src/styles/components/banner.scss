@@ -16,18 +16,29 @@
   }
 
   &__tagline {
-    @include center-element;
     position: absolute;
+    display: flex;
+    align-items: center;
     top: 0;
-    left: 0;
-    right: 0;
     bottom: 0;
+    margin-left: 10px;
     color: $color-secondary;
     font-size: 24px;
     font-weight: 500;
 
     @media (min-width: 768px) {
+      justify-content: center;
+      left: 0;
+      right: 0;
+      margin-left: 0;
+    }
+
+    @media (min-width: 768px) {
       font-size: 48px;
     }
   }
+}
+
+.banner--secondary {
+  height: 223px;
 }

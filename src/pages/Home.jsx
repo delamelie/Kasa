@@ -8,6 +8,7 @@ export default function Home() {
       <Banner
         children="Chez vous, partout et ailleurs"
         picture={HomepageBanner}
+        variant="primary"
       />
       <Gallery />
     </div>

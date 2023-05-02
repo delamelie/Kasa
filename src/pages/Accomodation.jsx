@@ -67,6 +67,7 @@ export default function Accomodation() {
           className="accomodation__specs__description"
           label="Description"
           children={data.description}
+          variant="primary"
         />
 
         <Collapse
@@ -84,6 +85,7 @@ export default function Accomodation() {
               )
             })
           }
+          variant="primary"
         />
       </section>
     </div>

@@ -10,14 +10,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-main {
-  max-width: 1440px;
-  margin: 0 20px;
-  @media (min-width: 768px) {
-    margin: 0 100px;
-  }
-}
-
 ul {
   list-style-type: none;
   padding: 0;
@@ -30,9 +22,12 @@ button {
   cursor: pointer;
 }
 
-/* .container {
+.container {
+  min-height: 100vh;
+  max-width: 1240px;
   margin: 0 20px;
-  @media (min-width: 768px) {
-    margin: 0 100px;
+
+  @media (min-width: 1440px) {
+    margin: 0 auto;
   }
-} */
+}

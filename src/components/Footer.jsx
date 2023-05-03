@@ -1,5 +1,3 @@
-import logo from '../assets/logo.svg'
-
 export default function Footer() {
   return (
     <footer className="footer">
@@ -35,7 +33,6 @@ export default function Footer() {
           fill="#FF6060"
         />
       </svg>
-      {/* <img src={logo} alt="Logo" className="footer__logo" /> */}
       <h2 className="footer__copyright">
         &#169; 2020 Kasa. All rights reserved
       </h2>

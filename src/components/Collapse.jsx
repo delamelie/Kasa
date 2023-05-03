@@ -23,9 +23,6 @@ export default function Collapse({ children, label }) {
           className={isOpen ? 'chevron chevron-up' : 'chevron chevron-down'}
         />
       </button>
-      {/* <div className={isOpen ? 'collapse__text show' : 'collapse__text'}>
-        {children}
-      </div> */}
       <div>
         {isOpen && <div className="collapse__text show">{children}</div>}
       </div>

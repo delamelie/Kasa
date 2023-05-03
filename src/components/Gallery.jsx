@@ -5,7 +5,7 @@ export default function Gallery() {
   const accomodations = useLoaderData()
   return (
     <main className="gallery">
-      <ul className="gallery__item">
+      <ul className="gallery__items">
         {accomodations.map((accomodation) => (
           <Thumb key={accomodation.id} accomodation={accomodation} />
         ))}

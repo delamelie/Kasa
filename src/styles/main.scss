@@ -6,8 +6,6 @@ body {
   font-family: 'Montserrat', 'DM Sans', sans-serif;
   font-size: 18px;
   font-weight: 500;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 ul {
@@ -23,8 +21,8 @@ button {
 }
 
 .container {
-  min-height: 100vh;
   max-width: 1240px;
+  min-height: 100vh;
   margin: 0 20px;
 
   @media (min-width: 1440px) {

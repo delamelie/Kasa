@@ -11,7 +11,7 @@
     padding: 52px 50px;
   }
 
-  &__item {
+  &__items {
     margin: 0;
 
     @media (min-width: 768px) {
@@ -21,6 +21,7 @@
     }
     @media (min-width: 1200px) {
       grid-template-columns: 1fr 1fr 1fr;
+      justify-items: center;
       row-gap: 55px;
       column-gap: 50px;
     }

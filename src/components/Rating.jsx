@@ -13,15 +13,3 @@ export default function Rating({ rating }) {
   ))
   return <div className="rating">{stars}</div>
 }
-
-// const stars = starsArray.map((index) => {
-//   if (index <= rating) {
-//     return <FontAwesomeIcon key={index} icon={faStar} className="star" />
-//   } else {
-//     return (
-//       <FontAwesomeIcon key={index} icon={faStar} className="empty-star" />
-//     )
-//   }
-// })
-// return <React.Fragment>{stars}</React.Fragment>
-// }

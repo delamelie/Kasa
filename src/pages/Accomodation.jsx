@@ -4,7 +4,6 @@ import Carousel from '../components/Carousel'
 import Tag from '../components/Tag'
 import Collapse from '../components/Collapse'
 import Rating from '../components/Rating'
-//import NotFound from './NotFound'
 
 export default function Accomodation() {
   const { id } = useParams()
@@ -22,8 +21,6 @@ export default function Accomodation() {
   }, [id])
 
   if (!data) {
-    //throw Error('error')
-    // return <div>{<NotFound />}</div>
     return (
       <div>
         <Navigate to="/404" replace={true} />
@@ -67,7 +64,6 @@ export default function Accomodation() {
           className="accomodation__specs__description"
           label="Description"
           children={data.description}
-          variant="primary"
         />
 
         <Collapse
@@ -85,7 +81,6 @@ export default function Accomodation() {
               )
             })
           }
-          variant="primary"
         />
       </section>
     </div>

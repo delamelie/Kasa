@@ -1,8 +1,8 @@
-import { useState, React } from 'react'
+import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
-export default function Collapse({ children, label }) {
+export default function Collapse({ description, label }) {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
@@ -23,9 +23,9 @@ export default function Collapse({ children, label }) {
           className={isOpen ? 'chevron chevron-up' : 'chevron chevron-down'}
         />
       </button>
-      <div>
-        {isOpen && <div className="collapse__text show">{children}</div>}
-      </div>
+      {isOpen && (
+        <div className="collapse__text collapse__text--show">{description}</div>
+      )}
     </div>
   )
 }

@@ -15,24 +15,33 @@
 
   &__text {
     display: none;
-    padding: 15px;
-    font-size: 12px;
-    border-radius: 5px;
-    color: $color-primary;
-    font-weight: 400;
-    background-color: #f6f6f6;
-
-    @media (min-width: 768px) {
-      font-size: 18px;
+    &--show {
+      display: flex;
+      animation: fadeIn 0.3s ease-in-out;
+      margin-bottom: 30px;
+      padding: 15px;
+      font-size: 12px;
+      border-radius: 5px;
+      color: $color-primary;
+      font-weight: 400;
+      background-color: #f6f6f6;
+      @media (min-width: 768px) {
+        font-size: 18px;
+      }
     }
   }
 }
 
 .chevron-up {
   transform: rotate(180deg);
+  transition: transform 0.3s ease;
 }
 
-.show {
-  display: flex;
-  margin-bottom: 30px;
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

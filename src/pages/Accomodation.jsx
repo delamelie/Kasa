@@ -11,12 +11,10 @@ export default function Accomodation() {
 
   useEffect(() => {
     fetch(`/accomodation.json`)
-      .then((response) => {
-        return response.json()
-      })
-      .then((data) => {
+      .then((response) => response.json())
+      .then((data) =>
         setData(data.find((accomodation) => accomodation.id === id))
-      })
+      )
       .catch((error) => console.log(error))
   }, [id])
 
@@ -63,12 +61,12 @@ export default function Accomodation() {
         <Collapse
           className="accomodation__specs__description"
           label="Description"
-          children={data.description}
+          description={data.description}
         />
 
         <Collapse
           label="Équipements"
-          children={
+          description={
             data.equipments &&
             data.equipments.map((equipment, index) => {
               return (
